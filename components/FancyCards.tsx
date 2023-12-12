@@ -4,7 +4,7 @@ import React from 'react'
 export default function FancyCards() {
   return (
     <View>
-          <Text style={styles.headingtext}>Trending Places</Text>
+          
           <View style={[styles.card,styles.cardElevated]}>
               <Image
                   source={{uri:'https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg'} }
@@ -22,11 +22,6 @@ export default function FancyCards() {
 }
 
 const styles = StyleSheet.create({
-    headingtext: {
-        fontSize: 24,
-        fontWeight:'bold',
-        paddingHorizontal:8
-    },
     card: {
         padding: 10,
         marginHorizontal: 10,
@@ -34,7 +29,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 0.3,
-        borderColor:'black'
+        borderColor: 'black',
+        borderRadius: 10,
         
     },
     cardElevated: {
