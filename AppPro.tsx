@@ -1,10 +1,11 @@
 import React from "react";
 import {
-    View, Text,StyleSheet,useColorScheme
+    View, Text,StyleSheet,useColorScheme, Appearance
 } from 'react-native'
 
 function AppPro(): JSX.Element {
-    const isDarkMode = useColorScheme() ==='dark'
+    const isDarkMode = useColorScheme() === 'dark'
+
     return (
         <View style={styles.container}>
             <Text style={isDarkMode ? styles.darktext : styles.whiteText}>Hey</Text>
